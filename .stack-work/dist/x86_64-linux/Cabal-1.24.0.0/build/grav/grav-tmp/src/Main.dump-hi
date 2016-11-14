@@ -1,0 +1,1384 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-14 17:54:25.217645426 UTC
+
+interface main@main:Main [family instance module] 8001
+  interface hash: 893b97d0aadbc322f050b9a18ebcec9e
+  ABI hash: 964914b530c1b7ab92e3ab7866755550
+  export-list hash: 5bff3ac90654fa135a2da421e3795b73
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c25210660fd482b6b2301fb47fc4df38
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.applyAcc
+  Main.e
+  Main.force
+  Main.forceAll
+  Main.g
+  Main.genParts
+  Main.main
+  Main.mass
+  Main.pos
+  Main.solarSystem
+  Main.updateAndPrint
+  Main.updateParticle
+  Main.updateSystem
+  Main.vel
+  Main.Particle{Main.Particle}
+module dependencies: Vector
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      parallel-3.2.1.0@parallel-3.2.1.0-6VcN0yUHtcs831TgbJiSSi
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         main@main:Vector
+import  -/  base-4.9.0.0:Control.Monad 7767aebfd53f0b584cef2fe66ad3986c
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Float 469226b1bc53433e95d0167dec5d0312
+import  -/  base-4.9.0.0:GHC.Generics 8e2a7658e8b966c1d29d0d5fd4129f38
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
+import  -/  deepseq-1.4.2.0@deepseq-1.4.2.0:Control.DeepSeq 7269db0bf259635054f0f9964b3c6fe7
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  Vector c86914e5c4a1bc2270465f6365c6676e
+  exports: 6aa2a87ddf9d7669d767e0e08ccee646
+  Vec2 c84915b936f2103b254bd0f7af1635c3
+  add 7b1457e5caa788bca00820b08b086d2a
+  distanceSquared 1ca723284639ae15d1b65a127a4a29db
+  fromTuple 5a6a6aafbb11d7a2c567f6fd4906ac33
+  scale 42eb577f5ab46fd50208335f70810a24
+  sub 71fac3c70b9584fb327070cb568a3994
+  vec2 387f89a0db0935689b09894a50a1eb4b
+import  -/  parallel-3.2.1.0@parallel-3.2.1.0-6VcN0yUHtcs831TgbJiSSi:Control.Parallel.Strategies d4cb57c7a63ecde0a4175c7100c7c26c
+a7697e75cc1a4c3f2480985ea37353c9
+  $fEqParticle :: GHC.Classes.Eq Main.Particle
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Particle Main.$fEqParticle_$c== Main.$fEqParticle_$c/= -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fEqParticle_$c/= ::
+    Main.Particle -> Main.Particle -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LL),1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))><S(S(S)LL),1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Main.Particle) (b :: Main.Particle) ->
+                 case Main.$fEqParticle_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fEqParticle_$c== ::
+    Main.Particle -> Main.Particle -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)LL),1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))><S(S(S)LL),1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Main.Particle) (w1 :: Main.Particle) ->
+                 case w of ww { Main.Particle ww1 ww2 ww3 ->
+                 case ww1 of ww4 { GHC.Types.D# ww5 ->
+                 case w1 of ww6 { Main.Particle ww7 ww8 ww9 ->
+                 case ww7 of ww10 { GHC.Types.D# ww11 ->
+                 Main.$w$c== ww5 ww2 ww3 ww11 ww8 ww9 } } } }) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fGenericParticle :: GHC.Generics.Generic Main.Particle
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Particle
+                  Main.$fGenericParticle_$cfrom
+                  Main.$fGenericParticle_$cto -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fGenericParticle_$cfrom ::
+    Main.Particle -> GHC.Generics.Rep Main.Particle x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: Main.Particle) ->
+                 case ds of wild { Main.Particle g1 g2 g3 ->
+                 (GHC.Generics.:*:
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            'GHC.Base.Nothing
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            'GHC.Base.Nothing
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Vector.Vec2)
+                       GHC.Generics.:*: GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             'GHC.Base.Nothing
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Vector.Vec2))
+                    @ x
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <GHC.Types.Double>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_R) <x>_N))
+                    (GHC.Generics.:*:
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               'GHC.Base.Nothing
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R Vector.Vec2))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               'GHC.Base.Nothing
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R Vector.Vec2))
+                       @ x
+                       g2
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <GHC.Generics.R>_P <Vector.Vec2>_R <x>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R Vector.Vec2>_R) <x>_N))
+                       g3
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <GHC.Generics.R>_P <Vector.Vec2>_R <x>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R Vector.Vec2>_R) <x>_N))))
+                   `cast`
+                 (Trans
+                      (Sym (GHC.Generics.N:M1[0]
+                                <GHC.Generics.C>_P
+                                <'GHC.Generics.MetaCons
+                                   "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
+                                 GHC.Generics.:*: (GHC.Generics.M1
+                                                     GHC.Generics.S
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.K1 GHC.Generics.R Vector.Vec2)
+                                                   GHC.Generics.:*: GHC.Generics.M1
+                                                                      GHC.Generics.S
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.K1
+                                                                         GHC.Generics.R
+                                                                         Vector.Vec2))>_R))
+                      (Trans
+                           (Sym (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "Particle" "Main" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              'GHC.Base.Nothing
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
+                                         GHC.Generics.:*: (GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                'GHC.Base.Nothing
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R Vector.Vec2)
+                                                           GHC.Generics.:*: GHC.Generics.M1
+                                                                              GHC.Generics.S
+                                                                              ('GHC.Generics.MetaSel
+                                                                                 'GHC.Base.Nothing
+                                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                                 'GHC.Generics.NoSourceStrictness
+                                                                                 'GHC.Generics.DecidedLazy)
+                                                                              (GHC.Generics.K1
+                                                                                 GHC.Generics.R
+                                                                                 Vector.Vec2)))>_R))
+                           (Sub (Sym (Main.Rep_Particle[0])))) <x>_N) }) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fGenericParticle_$cto ::
+    GHC.Generics.Rep Main.Particle x -> Main.Particle
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep Main.Particle x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Main.Rep_Particle[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "Particle" "Main" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              'GHC.Base.Nothing
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
+                                         GHC.Generics.:*: (GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                'GHC.Base.Nothing
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R Vector.Vec2)
+                                                           GHC.Generics.:*: GHC.Generics.M1
+                                                                              GHC.Generics.S
+                                                                              ('GHC.Generics.MetaSel
+                                                                                 'GHC.Base.Nothing
+                                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                                 'GHC.Generics.NoSourceStrictness
+                                                                                 'GHC.Generics.DecidedLazy)
+                                                                              (GHC.Generics.K1
+                                                                                 GHC.Generics.R
+                                                                                 Vector.Vec2)))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             'GHC.Base.Nothing
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R Vector.Vec2)
+                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                           GHC.Generics.S
+                                                                           ('GHC.Generics.MetaSel
+                                                                              'GHC.Base.Nothing
+                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                              'GHC.Generics.NoSourceStrictness
+                                                                              'GHC.Generics.DecidedLazy)
+                                                                           (GHC.Generics.K1
+                                                                              GHC.Generics.R
+                                                                              Vector.Vec2))>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 case ds2 of wild1 { GHC.Generics.:*: ds3 ds4 ->
+                 Main.Particle
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                'GHC.Base.Nothing
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <GHC.Types.Double>_R <x>_P))
+                   ds3
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                'GHC.Base.Nothing
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Vector.Vec2>_R <x>_N)
+                        (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Vector.Vec2>_R <x>_P))
+                   ds4
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                'GHC.Base.Nothing
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Vector.Vec2>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <Vector.Vec2>_R <x>_P)) } }) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fNFDataParticle :: Control.DeepSeq.NFData Main.Particle
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SS)S(SS)),1*U(1*H,1*U(1*H,1*H),1*U(1*H,1*H))>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Main.$fNFDataParticle_$s$dmrnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Main.Particle>_N)) -}
+54be8cbedbc196d6eba5a702b3c9b1cc
+  $fNFDataParticle1 ::
+    Control.DeepSeq.GNFData
+      (GHC.Generics.D1
+         ('GHC.Generics.MetaData "Particle" "Main" "main" 'GHC.Types.False)
+         (GHC.Generics.C1
+            ('GHC.Generics.MetaCons
+               "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            (GHC.Generics.S1
+               ('GHC.Generics.MetaSel
+                  'GHC.Base.Nothing
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.Rec0 GHC.Types.Double)
+             GHC.Generics.:*: (GHC.Generics.S1
+                                 ('GHC.Generics.MetaSel
+                                    'GHC.Base.Nothing
+                                    'GHC.Generics.NoSourceUnpackedness
+                                    'GHC.Generics.NoSourceStrictness
+                                    'GHC.Generics.DecidedLazy)
+                                 (GHC.Generics.Rec0 Vector.Vec2)
+                               GHC.Generics.:*: GHC.Generics.S1
+                                                  ('GHC.Generics.MetaSel
+                                                     'GHC.Base.Nothing
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.Rec0 Vector.Vec2)))))
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(S(SS)S(SS))),1*U(1*U,1*U(1*U(1*H,1*H),1*U(1*H,1*H)))>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fNFDataParticle2
+                  `cast`
+                (Sym (Control.DeepSeq.N:GNFData[0]
+                          <GHC.Types.*>_N
+                          <GHC.Generics.M1
+                             GHC.Generics.D
+                             ('GHC.Generics.MetaData "Particle" "Main" "main" 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 GHC.Types.Double)
+                                 GHC.Generics.:*: (GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0 Vector.Vec2)
+                                                   GHC.Generics.:*: GHC.Generics.S1
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.Rec0
+                                                                         Vector.Vec2))))>_N)) -}
+dad04a652661113da3e0730756d55e74
+  $fNFDataParticle2 ::
+    GHC.Generics.M1
+      GHC.Generics.D
+      ('GHC.Generics.MetaData "Particle" "Main" "main" 'GHC.Types.False)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         (GHC.Generics.S1
+            ('GHC.Generics.MetaSel
+               'GHC.Base.Nothing
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.Rec0 GHC.Types.Double)
+          GHC.Generics.:*: (GHC.Generics.S1
+                              ('GHC.Generics.MetaSel
+                                 'GHC.Base.Nothing
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.Rec0 Vector.Vec2)
+                            GHC.Generics.:*: GHC.Generics.S1
+                                               ('GHC.Generics.MetaSel
+                                                  'GHC.Base.Nothing
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.Rec0 Vector.Vec2))))
+      a1
+    -> ()
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(S(SS)S(SS))),1*U(1*U,1*U(1*U(1*H,1*H),1*U(1*H,1*H)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a1
+                   (w :: GHC.Generics.M1
+                           GHC.Generics.D
+                           ('GHC.Generics.MetaData "Particle" "Main" "main" 'GHC.Types.False)
+                           (GHC.Generics.M1
+                              GHC.Generics.C
+                              ('GHC.Generics.MetaCons
+                                 "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                              (GHC.Generics.S1
+                                 ('GHC.Generics.MetaSel
+                                    'GHC.Base.Nothing
+                                    'GHC.Generics.NoSourceUnpackedness
+                                    'GHC.Generics.NoSourceStrictness
+                                    'GHC.Generics.DecidedLazy)
+                                 (GHC.Generics.Rec0 GHC.Types.Double)
+                               GHC.Generics.:*: (GHC.Generics.S1
+                                                   ('GHC.Generics.MetaSel
+                                                      'GHC.Base.Nothing
+                                                      'GHC.Generics.NoSourceUnpackedness
+                                                      'GHC.Generics.NoSourceStrictness
+                                                      'GHC.Generics.DecidedLazy)
+                                                   (GHC.Generics.Rec0 Vector.Vec2)
+                                                 GHC.Generics.:*: GHC.Generics.S1
+                                                                    ('GHC.Generics.MetaSel
+                                                                       'GHC.Base.Nothing
+                                                                       'GHC.Generics.NoSourceUnpackedness
+                                                                       'GHC.Generics.NoSourceStrictness
+                                                                       'GHC.Generics.DecidedLazy)
+                                                                    (GHC.Generics.Rec0
+                                                                       Vector.Vec2))))
+                           a1) ->
+                 case w `cast`
+                      (Trans
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "Particle" "Main" "main" 'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.C
+                                   ('GHC.Generics.MetaCons
+                                      "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                   (GHC.Generics.S1
+                                      ('GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.Rec0 GHC.Types.Double)
+                                    GHC.Generics.:*: (GHC.Generics.S1
+                                                        ('GHC.Generics.MetaSel
+                                                           'GHC.Base.Nothing
+                                                           'GHC.Generics.NoSourceUnpackedness
+                                                           'GHC.Generics.NoSourceStrictness
+                                                           'GHC.Generics.DecidedLazy)
+                                                        (GHC.Generics.Rec0 Vector.Vec2)
+                                                      GHC.Generics.:*: GHC.Generics.S1
+                                                                         ('GHC.Generics.MetaSel
+                                                                            'GHC.Base.Nothing
+                                                                            'GHC.Generics.NoSourceUnpackedness
+                                                                            'GHC.Generics.NoSourceStrictness
+                                                                            'GHC.Generics.DecidedLazy)
+                                                                         (GHC.Generics.Rec0
+                                                                            Vector.Vec2)))>_R)
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.C>_P
+                                <'GHC.Generics.MetaCons
+                                   "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                <GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 GHC.Types.Double)
+                                 GHC.Generics.:*: (GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0 Vector.Vec2)
+                                                   GHC.Generics.:*: GHC.Generics.S1
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.Rec0
+                                                                         Vector.Vec2))>_R) <a1>_N) of ww { GHC.Generics.:*: ww1 ww2 ->
+                 case ww2 of ww3 { GHC.Generics.:*: ww4 ww5 ->
+                 case ww4
+                        `cast`
+                      (Trans
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.S>_P
+                                <'GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy>_P
+                                <GHC.Generics.Rec0 Vector.Vec2>_R <a1>_N)
+                           (GHC.Generics.N:K1[0]
+                                <GHC.Generics.R>_P
+                                <Vector.Vec2>_R
+                                <a1>_P)) of ww6 { Vector.Vec2 ww7 ww8 ->
+                 case ww7 of ww9 { GHC.Types.D# ipv ->
+                 case ww8 of ww10 { GHC.Types.D# ipv1 ->
+                 case ww5
+                        `cast`
+                      (Trans
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.S>_P
+                                <'GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy>_P
+                                <GHC.Generics.Rec0 Vector.Vec2>_R <a1>_N)
+                           (GHC.Generics.N:K1[0]
+                                <GHC.Generics.R>_P
+                                <Vector.Vec2>_R
+                                <a1>_P)) of ww11 { Vector.Vec2 ww12 ww13 ->
+                 case ww12 of ww14 { GHC.Types.D# ipv2 ->
+                 case ww13 of ww15 { GHC.Types.D# ipv3 ->
+                 case ww1 of tpl { DEFAULT -> GHC.Tuple.() } } } } } } } } }) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fNFDataParticle_$s$dmrnf :: Main.Particle -> ()
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SS)S(SS)),1*U(1*H,1*U(1*H,1*H),1*U(1*H,1*H))>,
+     Unfolding: InlineRule (-3, True, False)
+                (\ (eta :: Main.Particle) ->
+                 Main.$fNFDataParticle1
+                   `cast`
+                 (Control.DeepSeq.N:GNFData[0]
+                      <GHC.Types.*>_N (Sym (Main.Rep_Particle[0])))
+                   @ GHC.Prim.Any
+                   (Main.$fGenericParticle_$cfrom @ GHC.Prim.Any eta)) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fShowParticle :: GHC.Show.Show Main.Particle
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Particle
+                  Main.$fShowParticle_$cshowsPrec
+                  Main.$fShowParticle_$cshow
+                  Main.$fShowParticle_$cshowList -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fShowParticle1 :: Main.Particle -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: Main.Particle) ->
+                 case w of ww { Main.Particle ww1 ww2 ww3 ->
+                 Main.$w$cshowsPrec 0# ww1 ww2 ww3 }) -}
+3fc9fed7d0abdb4b235b0dfde3a59e00
+  $fShowParticle2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Particle "#) -}
+c282d444a4727267053ebdce529f931b
+  $fShowParticle3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fShowParticle_$cshow :: Main.Particle -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Particle) ->
+                 Main.$fShowParticle_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fShowParticle_$cshowList :: [Main.Particle] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Main.Particle
+                   Main.$fShowParticle1) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  $fShowParticle_$cshowsPrec ::
+    GHC.Types.Int -> Main.Particle -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U(U),1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Main.Particle) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Main.Particle ww3 ww4 ww5 ->
+                 Main.$w$cshowsPrec ww1 ww3 ww4 ww5 } }) -}
+321b13cc3edfca6ae96aa3b8b2572e79
+  $tc'Particle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13526458634341882321##
+                   16338922952133277901##
+                   Main.$trModule
+                   Main.$tc'Particle1) -}
+6c1cd046c1f5b43b001905f75e75aff3
+  $tc'Particle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Particle"#) -}
+aa5bc99416b3d2d738a6d60aec77b660
+  $tcParticle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13357883770941047289##
+                   9443376489356096646##
+                   Main.$trModule
+                   Main.$tcParticle1) -}
+b4971702518a2468a9671c3ae7e6d1b4
+  $tcParticle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Particle"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+e59f8f06cbda72357dcaf91f482b65ff
+  $w$c== ::
+    GHC.Prim.Double#
+    -> Vector.Vec2
+    -> Vector.Vec2
+    -> GHC.Prim.Double#
+    -> Vector.Vec2
+    -> Vector.Vec2
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(1*U(U),1*U(U))><L,1*U(1*U(U),1*U(U))><S,U><L,1*U(1*U(U),1*U(U))><L,1*U(1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Double#)
+                   (ww1 :: Vector.Vec2)
+                   (ww2 :: Vector.Vec2)
+                   (ww3 :: GHC.Prim.Double#)
+                   (ww4 :: Vector.Vec2)
+                   (ww5 :: Vector.Vec2) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==## ww ww3) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case ww1 of ww6 { Vector.Vec2 ww7 ww8 ->
+                      case ww7 of ww9 { GHC.Types.D# ww10 ->
+                      case ww4 of ww11 { Vector.Vec2 ww12 ww13 ->
+                      case ww12 of ww14 { GHC.Types.D# ww15 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==## ww10 ww15) of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case ww8 of wild2 { GHC.Types.D# x ->
+                           case ww13 of wild3 { GHC.Types.D# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==## x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> Vector.$fEqVec2_$c== ww2 ww5 } } } } } } } } }) -}
+9aa5d340877828626588c418923d0f66
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Types.Double -> Vector.Vec2 -> Vector.Vec2 -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <S,U><L,1*U(U)><L,1*U(1*U(U),1*U(U))><L,1*U(1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Double)
+                   (ww2 :: Vector.Vec2)
+                   (ww3 :: Vector.Vec2) ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of ww4 { GHC.Types.D# ww5 ->
+                     GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble_$sshowFloat
+                       Main.$fShowParticle3
+                       ww5 }
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = case ww2 of ww4 { Vector.Vec2 ww5 ww6 ->
+                     Vector.$w$cshowsPrec 11# ww5 ww6 }
+                 } in
+                 let {
+                   g1 :: GHC.Base.String -> GHC.Base.String
+                   = case ww3 of ww4 { Vector.Vec2 ww5 ww6 ->
+                     Vector.$w$cshowsPrec 11# ww5 ww6 }
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Main.$fShowParticle2
+                       (f (GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.showSpace1
+                             (f1 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g1 x)))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 x)) }) -}
+84e780ca2205d3c9957b59c9fbf4e7e8
+  $w$sgenParts :: GHC.Prim.Int# -> [Main.Particle]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 1# ww) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Main.Particle]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          let {
+                            ys :: [Main.Particle]
+                            = case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.==# x ww) of wild1 {
+                                GHC.Types.False -> go (GHC.Prim.+# x 1#)
+                                GHC.Types.True -> GHC.Types.[] @ Main.Particle }
+                          } in
+                          let {
+                            ds :: GHC.Prim.Double# = GHC.Prim.int2Double# x
+                          } in
+                          let {
+                            ds1 :: GHC.Types.Double {- Strictness: m -} = GHC.Types.D# ds
+                          } in
+                          letrec {
+                            go1 :: GHC.Prim.Int# -> [Main.Particle]
+                              {- Arity: 1, Strictness: <L,U> -}
+                            = \ (x1 :: GHC.Prim.Int#) ->
+                              GHC.Types.:
+                                @ Main.Particle
+                                (Main.Particle
+                                   Main.genParts3
+                                   (Vector.Vec2 ds1 (GHC.Types.D# (GHC.Prim.int2Double# x1)))
+                                   Main.genParts1)
+                                (case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.==# x1 ww) of wild1 {
+                                   GHC.Types.False -> go1 (GHC.Prim.+# x1 1#)
+                                   GHC.Types.True -> ys })
+                          } in
+                          go1 1#
+                      } in
+                      go 1#
+                   GHC.Types.True -> GHC.Types.[] @ Main.Particle }) -}
+90c2836a6dbc2ff96a70d77fb3893287
+  $wapplyAcc ::
+    GHC.Types.Double
+    -> Vector.Vec2
+    -> Main.Particle
+    -> (# GHC.Types.Double, Vector.Vec2, Vector.Vec2 #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U)><L,1*U(1*U(U),1*U(U))><L,U(1*U,1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Double)
+                   (w1 :: Vector.Vec2)
+                   (w2 :: Main.Particle) ->
+                 let {
+                   v :: Vector.Vec2
+                   = case w2 of wild { Main.Particle ds ds1 a ->
+                     case a of wild1 { Vector.Vec2 x1 y1 ->
+                     case w1 of wild2 { Vector.Vec2 x y ->
+                     Vector.Vec2
+                       (case x1 of wild3 { GHC.Types.D# x2 ->
+                        case w of wild4 { GHC.Types.D# x3 ->
+                        case x of wild5 { GHC.Types.D# y2 ->
+                        GHC.Types.D# (GHC.Prim.+## x2 (GHC.Prim.*## x3 y2)) } } })
+                       (case y1 of wild3 { GHC.Types.D# x2 ->
+                        case w of wild4 { GHC.Types.D# x3 ->
+                        case y of wild5 { GHC.Types.D# y2 ->
+                        GHC.Types.D# (GHC.Prim.+## x2 (GHC.Prim.*## x3 y2)) } } }) } } }
+                 } in
+                 (# case w2 of wild { Main.Particle m ds ds1 -> m },
+                    case w2 of wild { Main.Particle ds p ds1 ->
+                    case p of wild1 { Vector.Vec2 x1 y1 ->
+                    case v of wild2 { Vector.Vec2 x y ->
+                    Vector.Vec2
+                      (case x1 of wild3 { GHC.Types.D# x2 ->
+                       case w of wild4 { GHC.Types.D# x3 ->
+                       case x of wild5 { GHC.Types.D# y2 ->
+                       GHC.Types.D# (GHC.Prim.+## x2 (GHC.Prim.*## x3 y2)) } } })
+                      (case y1 of wild3 { GHC.Types.D# x2 ->
+                       case w of wild4 { GHC.Types.D# x3 ->
+                       case y of wild5 { GHC.Types.D# y2 ->
+                       GHC.Types.D# (GHC.Prim.+## x2 (GHC.Prim.*## x3 y2)) } } }) } } },
+                    v #)) -}
+ba6703dc9b8ec6f608c09ce47ef79910
+  $wforce ::
+    GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> (# GHC.Types.Double, GHC.Types.Double #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U(U)><L,U(U)><L,U(U)><L,1*U(U)><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Double)
+                   (ww1 :: GHC.Types.Double)
+                   (ww2 :: GHC.Types.Double)
+                   (ww3 :: GHC.Types.Double)
+                   (ww4 :: GHC.Types.Double)
+                   (ww5 :: GHC.Types.Double) ->
+                 let {
+                   s :: GHC.Types.Double
+                   = case ww of wild1 { GHC.Types.D# y ->
+                     case ww3 of wild2 { GHC.Types.D# y1 ->
+                     case ww1 of wild3 { GHC.Types.D# x ->
+                     case ww4 of wild4 { GHC.Types.D# y2 ->
+                     case ww2 of wild5 { GHC.Types.D# x4 ->
+                     case ww5 of wild6 { GHC.Types.D# y4 ->
+                     let {
+                       x5 :: GHC.Prim.Double# = GHC.Prim.-## x4 y4
+                     } in
+                     let {
+                       x6 :: GHC.Prim.Double# = GHC.Prim.-## x y2
+                     } in
+                     case GHC.Prim./##
+                            (GHC.Prim.*## (GHC.Prim.*## 6.674e-11## y) y1)
+                            (GHC.Prim.**##
+                               (GHC.Prim.+##
+                                  (GHC.Prim.+## (GHC.Prim.*## x6 x6) (GHC.Prim.*## x5 x5))
+                                  1.0e-6##)
+                               1.5##) of wild7 { DEFAULT ->
+                     GHC.Types.D# wild7 } } } } } } }
+                 } in
+                 (# case s of wild { GHC.Types.D# x ->
+                    case ww4 of wild1 { GHC.Types.D# x1 ->
+                    case ww1 of wild2 { GHC.Types.D# y ->
+                    GHC.Types.D# (GHC.Prim.*## x (GHC.Prim.-## x1 y)) } } },
+                    case s of wild { GHC.Types.D# x ->
+                    case ww5 of wild1 { GHC.Types.D# x1 ->
+                    case ww2 of wild2 { GHC.Types.D# y ->
+                    GHC.Types.D# (GHC.Prim.*## x (GHC.Prim.-## x1 y)) } } } #)) -}
+527967a5228cc89ee30cb483011fcbf3
+  $wforceAll ::
+    Main.Particle
+    -> [Main.Particle] -> (# GHC.Types.Double, GHC.Types.Double #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U),U(U(U),U(U)),U(U(U),U(U)))><S,1*U>,
+     Inline: [0] -}
+6e04ea344454997a34f7a8387f9e0563
+  $wgenParts :: GHC.Prim.Int# -> [Main.Particle]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 1# ww) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Main.Particle]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          let {
+                            ys :: [Main.Particle]
+                            = case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.==# x ww) of wild1 {
+                                GHC.Types.False -> go (GHC.Prim.+# x 1#)
+                                GHC.Types.True -> GHC.Types.[] @ Main.Particle }
+                          } in
+                          let {
+                            ds :: GHC.Prim.Double# = GHC.Prim.int2Double# x
+                          } in
+                          let {
+                            ds1 :: GHC.Types.Double {- Strictness: m -} = GHC.Types.D# ds
+                          } in
+                          letrec {
+                            go1 :: GHC.Prim.Int# -> [Main.Particle]
+                              {- Arity: 1, Strictness: <L,U> -}
+                            = \ (x1 :: GHC.Prim.Int#) ->
+                              GHC.Types.:
+                                @ Main.Particle
+                                (Main.Particle
+                                   Main.genParts3
+                                   (Vector.Vec2 ds1 (GHC.Types.D# (GHC.Prim.int2Double# x1)))
+                                   Main.genParts1)
+                                (case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.==# x1 ww) of wild1 {
+                                   GHC.Types.False -> go1 (GHC.Prim.+# x1 1#)
+                                   GHC.Types.True -> ys })
+                          } in
+                          go1 1#
+                      } in
+                      go 1#
+                   GHC.Types.True -> GHC.Types.[] @ Main.Particle }) -}
+d1e86237b87398f349a2fb2301662c01
+  $wupdateParticle ::
+    GHC.Types.Double
+    -> [Main.Particle]
+    -> Main.Particle
+    -> (# GHC.Types.Double, Vector.Vec2, Vector.Vec2 #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U)><L,1*U><L,U(U(U),U(U(U),U(U)),U(U(U),U(U)))>,
+     Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Double)
+                   (w1 :: [Main.Particle])
+                   (w2 :: Main.Particle) ->
+                 Main.$wapplyAcc
+                   w
+                   (case Main.$wforceAll w2 w1 of ww { (#,#) ww1 ww2 ->
+                    let {
+                      s :: GHC.Types.Double
+                      = case w2 of wild { Main.Particle m ds ds1 ->
+                        case m of wild1 { GHC.Types.D# y ->
+                        case GHC.Prim./## 1.0## y of wild2 { DEFAULT ->
+                        GHC.Types.D# wild2 } } }
+                    } in
+                    Vector.Vec2
+                      (GHC.Float.timesDouble s ww1)
+                      (GHC.Float.timesDouble s ww2) })
+                   w2) -}
+a7697e75cc1a4c3f2480985ea37353c9
+  data Particle = Particle GHC.Types.Double Vector.Vec2 Vector.Vec2
+a7697e75cc1a4c3f2480985ea37353c9
+  axiom Rep_Particle::
+      GHC.Generics.Rep Main.Particle
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData "Particle" "Main" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Particle" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     'GHC.Base.Nothing
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 GHC.Types.Double)
+                GHC.Generics.:*: (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       'GHC.Base.Nothing
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 Vector.Vec2)
+                                  GHC.Generics.:*: GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0 Vector.Vec2))))
+45a41fdfa11904e95efd7c41f094253b
+  applyAcc ::
+    GHC.Types.Double -> Vector.Vec2 -> Main.Particle -> Main.Particle
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U)><L,1*U(1*U(U),1*U(U))><L,U(1*U,1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Double)
+                   (w1 :: Vector.Vec2)
+                   (w2 :: Main.Particle) ->
+                 case Main.$wapplyAcc w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Main.Particle ww1 ww2 ww3 }) -}
+2fb0b5ee6b60a22ef9ba103a3c24fc56
+  e :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 1.0e-6##) -}
+3ddcf4fad3a2a653a986ad530b4ec003
+  force :: Main.Particle -> Main.Particle -> Vector.Vec2
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LSL),1*U(1*U(U),1*U(U(U),U(U)),A)><S(LSL),1*U(1*U(U),1*U(U(U),U(U)),A)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Main.Particle) (w1 :: Main.Particle) ->
+                 case w of ww { Main.Particle ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Vector.Vec2 ww5 ww6 ->
+                 case w1 of ww7 { Main.Particle ww8 ww9 ww10 ->
+                 case ww9 of ww11 { Vector.Vec2 ww12 ww13 ->
+                 case Main.$wforce
+                        ww1
+                        ww5
+                        ww6
+                        ww8
+                        ww12
+                        ww13 of ww14 { (#,#) ww15 ww16 ->
+                 Vector.Vec2 ww15 ww16 } } } } }) -}
+860cb64e8c792f9a66cbd76cd5a993ad
+  forceAll :: Main.Particle -> [Main.Particle] -> Vector.Vec2
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U),U(U(U),U(U)),U(U(U),U(U)))><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Main.Particle) (w1 :: [Main.Particle]) ->
+                 case Main.$wforceAll w w1 of ww { (#,#) ww1 ww2 ->
+                 Vector.Vec2 ww1 ww2 }) -}
+9be877d3b91f2beac8442820ef683227
+  g :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 6.674e-11##) -}
+8750f765a6cf49dd8181d8a8399f54ea
+  genParts ::
+    (GHC.Classes.Eq a, GHC.Num.Num a, GHC.Show.Show a,
+     GHC.Float.Floating a) =>
+    GHC.Types.Int -> [Main.Particle]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><L,A><L,A><L,A><S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Eq a)
+                   (w1 :: GHC.Num.Num a)
+                   (w2 :: GHC.Show.Show a)
+                   (w3 :: GHC.Float.Floating a)
+                   (w4 :: GHC.Types.Int) ->
+                 case w4 of ww { GHC.Types.I# ww1 -> Main.$wgenParts @ a ww1 }) -}
+de03b944567c6d0883dc64d047044ef9
+  genParts1 :: Vector.Vec2
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Vector.Vec2 Main.genParts2 Main.genParts2) -}
+510838b94c5ab87beae56070c068274d
+  genParts2 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0##) -}
+1dce3e90a71e6b9985ef259cba951218
+  genParts3 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
+dde50b5fe17321a53979ddd69008796a
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8ae12a19f65ab2381d90fd5c8415de3f
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Main.main5 Main.main4 Main.main3 Main.main2) -}
+4de9ecc38cc8f32e1ec3e853bbf2e339
+  main2 :: [Main.Particle]
+  {- Unfolding: (Main.$w$sgenParts 10000#) -}
+a937537581d22407ec99e908c6c396a2
+  main3 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 10.0##) -}
+ef80b42001ddf0c0afb238251ef04590
+  main4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+1a35b6c01210ecc4b59047e48f48b401
+  main5 ::
+    GHC.Types.Int
+    -> GHC.Types.Double
+    -> [Main.Particle]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,U(U)><L,U(U)><L,U><S,U>,
+     Unfolding: (\ (it :: GHC.Types.Int)
+                   (dt :: GHC.Types.Double)
+                   (parts :: [Main.Particle])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   newParts :: [Main.Particle]
+                   = case Main.main6
+                            (GHC.Base.map
+                               @ Main.Particle
+                               @ Main.Particle
+                               (Main.updateParticle dt parts)
+                               parts)
+                            GHC.Prim.realWorld# of ds { (#,#) ipv ipv1 ->
+                     ipv1 }
+                 } in
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (case it of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                0#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Base.++
+                           @ GHC.Types.Char
+                           (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                           (GHC.CString.unpackAppendCString#
+                              ": "#
+                              (case GHC.List.$wlenAcc
+                                      @ Main.Particle
+                                      newParts
+                                      0# of ww1 { DEFAULT ->
+                               case GHC.Show.$wshowSignedInt
+                                      0#
+                                      ww1
+                                      (GHC.Types.[] @ GHC.Types.Char) of ww8 { (#,#) ww9 ww10 ->
+                               GHC.Types.: @ GHC.Types.Char ww9 ww10 } })) } })
+                        GHC.Types.True
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case it of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># x 0#) of wild1 {
+                   GHC.Types.False -> (# ipv, GHC.Tuple.() #)
+                   GHC.Types.True
+                   -> Main.main_$supdateAndPrint
+                        ipv
+                        newParts
+                        dt
+                        (GHC.Prim.-# x 1#) } } }) -}
+3d410336d5ef79ce2d1ccd08369db1f2
+  main6 ::
+    [Main.Particle]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [Main.Particle] #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U> -}
+e1a7ca61ae7684ff93f197e5dbe5d75c
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+63b4e7a107ef129fb5b20034d5816692
+  main_$supdateAndPrint ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> [Main.Particle]
+    -> GHC.Types.Double
+    -> GHC.Prim.Int#
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <S,U><L,U><L,U(U)><L,U> -}
+b5c6c030467ba9c1e64dd6a0b21209ff
+  mass :: Main.Particle -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Particle) ->
+                 case ds of wild { Main.Particle m ds1 ds2 -> m }) -}
+9778ab45c0b2fd631ffa99fce953d1b9
+  pos :: Main.Particle -> Vector.Vec2
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Particle) ->
+                 case ds of wild { Main.Particle ds1 p ds2 -> p }) -}
+6468c9fd90a53042319d16d5accf2211
+  solarSystem ::
+    (GHC.Classes.Eq a, GHC.Num.Num a, GHC.Show.Show a,
+     GHC.Float.Floating a) =>
+    [Main.Particle]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A>m2,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dNum :: GHC.Num.Num a)
+                   ($dShow :: GHC.Show.Show a)
+                   ($dFloating :: GHC.Float.Floating a) ->
+                 Main.solarSystem1) -}
+6c0e7ce7ad2811208ddb69b414530a59
+  solarSystem1 :: [Main.Particle]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Main.Particle
+                   Main.solarSystem5
+                   Main.solarSystem2) -}
+f4a84285e3dad977d4c0f003216a837a
+  solarSystem10 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 5.972e24##) -}
+2252b6bb18f2a3a5940c221380f4f97a
+  solarSystem2 :: [Main.Particle]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Main.Particle
+                   Main.solarSystem3
+                   (GHC.Types.[] @ Main.Particle)) -}
+9443f2c986adc9f47594f62ecce73ba4
+  solarSystem3 :: Main.Particle
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Main.Particle
+                   Main.solarSystem4
+                   Main.genParts1
+                   Main.genParts1) -}
+db58eb191d2f3b169921b757635d0efe
+  solarSystem4 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 1.98855e30##) -}
+78e3e4dfa86120ca9277a517a4ccfec3
+  solarSystem5 :: Main.Particle
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Main.Particle
+                   Main.solarSystem10
+                   Main.solarSystem8
+                   Main.solarSystem6) -}
+cc23d43e75b7c797257ec36463522b01
+  solarSystem6 :: Vector.Vec2
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Vector.Vec2 Main.solarSystem7 Main.genParts2) -}
+51d065c4fb51e557c784c56eb20078d2
+  solarSystem7 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 29780.0##) -}
+b855df8d9916995ad38524e4c286188a
+  solarSystem8 :: Vector.Vec2
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Vector.Vec2 Main.genParts2 Main.solarSystem9) -}
+34ab2eccc738064ba20cd1f7ff72468b
+  solarSystem9 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.D# 1.469e11##) -}
+4c61a60af3f9739a42a979dfadd811b9
+  updateAndPrint ::
+    GHC.Types.Int
+    -> GHC.Types.Double -> [Main.Particle] -> GHC.Types.IO ()
+  {- Arity: 4, Strictness: <L,U(U)><L,U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main5
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R <[Main.Particle]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+a83fb814ae1474ad6cce8048ee8d173d
+  updateParticle ::
+    GHC.Types.Double
+    -> [Main.Particle] -> Main.Particle -> Main.Particle
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U)><L,1*U><L,U(U(U),U(U(U),U(U)),U(U(U),U(U)))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Double)
+                   (w1 :: [Main.Particle])
+                   (w2 :: Main.Particle) ->
+                 case Main.$wupdateParticle w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Main.Particle ww1 ww2 ww3 }) -}
+f62b51a2595fc3610dce856927dfc5ec
+  updateSystem ::
+    GHC.Types.Double -> [Main.Particle] -> [Main.Particle]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (dt :: GHC.Types.Double) (ps :: [Main.Particle]) ->
+                 GHC.Base.build
+                   @ Main.Particle
+                   (\ @ b1
+                      (c :: Main.Particle -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ Main.Particle
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ Main.Particle
+                         @ b1
+                         @ Main.Particle
+                         c
+                         (Main.updateParticle dt ps))
+                      n
+                      ps)) -}
+87323d78f2c4632281fc550ce8500810
+  vel :: Main.Particle -> Vector.Vec2
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Particle) ->
+                 case ds of wild { Main.Particle ds1 ds2 a -> a }) -}
+instance GHC.Classes.Eq [Main.Particle] = Main.$fEqParticle
+instance GHC.Generics.Generic [Main.Particle]
+  = Main.$fGenericParticle
+instance Control.DeepSeq.NFData [Main.Particle]
+  = Main.$fNFDataParticle
+instance GHC.Show.Show [Main.Particle] = Main.$fShowParticle
+family instance GHC.Generics.Rep [Main.Particle]
+  = Main.Rep_Particle
+"SC:updateAndPrint0" [ALWAYS] forall (sc :: GHC.Prim.State#
+                                              GHC.Prim.RealWorld)
+                                     (sc1 :: [Main.Particle])
+                                     (sc2 :: GHC.Types.Double)
+                                     (sc3 :: GHC.Prim.Int#)
+  Main.main5 (GHC.Types.I# sc3) sc2 sc1 sc
+  = Main.main_$supdateAndPrint sc sc1 sc2 sc3
+"SPEC/Main $dmrnf @ Particle" [ALWAYS] forall ($dNFData :: Control.DeepSeq.NFData
+                                                             Main.Particle)
+                                              ($dGeneric :: GHC.Generics.Generic Main.Particle)
+                                              ($dGNFData :: Control.DeepSeq.GNFData
+                                                              (GHC.Generics.Rep Main.Particle))
+  Control.DeepSeq.$dmrnf @ Main.Particle $dNFData $dGeneric $dGNFData
+  = Main.$fNFDataParticle_$s$dmrnf
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
