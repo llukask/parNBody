@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-14 17:54:25.217645426 UTC
+2016-11-14 18:13:25.459441823 UTC
 
 interface main@main:Main [family instance module] 8001
-  interface hash: 893b97d0aadbc322f050b9a18ebcec9e
-  ABI hash: 964914b530c1b7ab92e3ab7866755550
+  interface hash: 695264f432c9d8f8cfd509ff7e7ec5dd
+  ABI hash: 806b3218f8f9eb46aae4dbc1e2b65908
   export-list hash: 5bff3ac90654fa135a2da421e3795b73
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c25210660fd482b6b2301fb47fc4df38
@@ -1123,20 +1123,20 @@ de03b944567c6d0883dc64d047044ef9
 1dce3e90a71e6b9985ef259cba951218
   genParts3 :: GHC.Types.Double
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
-dde50b5fe17321a53979ddd69008796a
+bfa074cac78a16005a096adab1e73ab5
   main :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-8ae12a19f65ab2381d90fd5c8415de3f
+7f16cc953b9ef6c013020a4e40284d5f
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (Main.main5 Main.main4 Main.main3 Main.main2) -}
-4de9ecc38cc8f32e1ec3e853bbf2e339
+8c4ef65645abecc56f51df108e81dc59
   main2 :: [Main.Particle]
-  {- Unfolding: (Main.$w$sgenParts 10000#) -}
+  {- Unfolding: (Main.$w$sgenParts 3000#) -}
 a937537581d22407ec99e908c6c396a2
   main3 :: GHC.Types.Double
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 10.0##) -}
@@ -1206,7 +1206,7 @@ ef80b42001ddf0c0afb238251ef04590
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [Main.Particle] #)
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U> -}
-e1a7ca61ae7684ff93f197e5dbe5d75c
+9abfe7afe130e250d2f26711469c98aa
   main7 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

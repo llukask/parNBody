@@ -78,4 +78,4 @@ genParts :: (Eq a, Num a, Show a, Floating a) =>  Int -> [Particle]
 genParts n = [Particle 1 (V.vec2 x y) (V.vec2 0 0) | x <- map fromIntegral [1..n], y <- map fromIntegral [1..n]]
 
 main :: IO ()
-main = updateAndPrint 1 1e1 (genParts 10000)
+main = updateAndPrint 1 1e1 (genParts 3000)
