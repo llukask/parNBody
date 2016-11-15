@@ -11,8 +11,13 @@ import Control.Parallel.Strategies ( using
                                    , parMap)
 
 import qualified Control.Monad
+import qualified System.Environment
 import GHC.Generics (Generic)
 import Control.DeepSeq (NFData)
+import Graphics.Gloss ( display
+                      , Display(..)
+                      , white
+                      , Picture(..))
 
 data Particle = Particle Double V.Vec2 V.Vec2 deriving (Eq, Show, Generic, NFData)
 
@@ -52,10 +57,10 @@ updateSystem ::  Double -> [Particle] -> [Particle]
 updateSystem dt ps = map (updateParticle dt ps) ps
 
 updateAndPrint :: Int -> Double -> [Particle] -> IO ()
-updateAndPrint it dt parts = do
+updateAndPrint it dt parts = Control.Monad.when (it > 0) $ do
    let newParts = updateSystem dt parts `using` parList rdeepseq
    putStrLn $ show it ++ ": " ++ show (length $! newParts)
-   Control.Monad.when (it > 0) $ updateAndPrint (it - 1) dt newParts
+   updateAndPrint (it - 1) dt newParts
 
 solarSystem :: (Eq a, Num a, Show a, Floating a) => [Particle]
 solarSystem = let earthMass = 5.972e24
@@ -78,4 +83,12 @@ genParts :: (Eq a, Num a, Show a, Floating a) =>  Int -> [Particle]
 genParts n = [Particle 1 (V.vec2 x y) (V.vec2 0 0) | x <- map fromIntegral [1..n], y <- map fromIntegral [1..n]]
 
 main :: IO ()
-main = updateAndPrint 1 1e1 (genParts 3000)
+main = do
+  args <- System.Environment.getArgs
+  display (InWindow "Nice Window" (200, 200) (10, 10)) white (Circle 80)
+  if length args /= 2 then
+    putStrLn "Usage: grav <iters> <parts>"
+  else do
+    let iters = read $ head args
+    let parts = read $ head $ tail args
+    updateAndPrint iters 1e1 (genParts parts)
